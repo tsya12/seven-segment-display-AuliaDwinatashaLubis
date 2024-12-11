@@ -1,0 +1,206 @@
+/*clearing css*/
+
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parallax {
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.header {
+    background-image: url('merah.JPG');
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 3em;
+    letter-spacing: 15px;
+    font-family: fantasy;
+    background: linear-gradient(to right, 
+        rgba(0, 0, 0, 0.904) 0%, 
+        rgba(117, 4, 4, 0.932) 66%, 
+        rgba(117, 4, 4, 0.788) 66%, 
+        rgba(117, 4, 4, 0.952) 66%, 
+        rgb(0, 0, 0) 44%, 
+        rgba(0, 0, 0, 0.781) 44%
+    );
+    background-clip: text;
+    color: transparent;
+}
+
+
+.content {
+    background-image: url('campur.JPG');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.transparent-shape {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(225, 225, 225, 0.6);
+    border-radius: 20px;
+}
+
+.new-title {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    font-size: 2em;
+    letter-spacing: 8px;
+    font-family: fantasy;
+    color: rgb(108, 15, 1);
+    align-items: flex-start;
+}
+
+.seven-segment {
+    display: flex;
+    gap: 5px;
+    width: 120px;
+    height: 180px;
+    margin: 60px auto;
+    position: relative;
+}
+
+.segment {
+    width: 0px;
+    height: 54px;
+    border: 8px solid rgba(0, 0, 0, 0.384);
+    border-radius: 15px;
+    box-sizing: border-box;
+    position: absolute;
+}
+
+.segment::before, .segment::after {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent;
+    position: absolute;
+    content: '';
+}
+
+/*menengahkan setiap segment ketengah secara vertikal dan horizontal */
+.f, .b, .d {
+    width: 56px;
+    height: 0;
+    top: 78%;
+    left: 20%;
+    transform: translate(-60%, 20%);
+}
+
+/*menengahkan elemen seg-c dan seg-g, seg-a dan seg-e ketengah secara vertikal */
+.c, .g {
+    right: 52%;
+    transform: translateX(52%);
+}
+.f, .b, .d{
+    left: 30px;
+}
+.e, .a {
+    left: -12%;
+    transform: translateX(-12%);
+}
+.d {
+    top: 79px;
+}
+.f {
+    bottom: 10px;
+}
+.b {
+    top: 16px;
+}
+.c, .a{
+    top: 32px;
+}
+.g, .e {
+    bottom: 32px;
+}
+.container {
+    margin-bottom: 10px;
+}
+
+.text {
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    line-height: 1.5;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    color: black;
+    font-weight: bold;
+}
+
+.buttons button, .container button {
+    margin: 5px;
+    padding: 8px 17px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    cursor: pointer;
+    transition: background-color 0.3 ease;
+    border-radius: 80px;
+    background: linear-gradient(45deg, #d85a00, #9e1800, #943232, #071b1b, #815bff);
+    background-size: 200% 200%;
+    border: none;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+.buttons button:hover, .container button:hover {
+    background-position: right bottom;
+}
+
+.table {
+    width: 60%;
+    margin: 0px auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.cell-a {
+    background-color: #8a0000b0;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid #fff;
+}
+
+.cell-a, .cell-b {
+    padding: 8px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+.output-even {
+    background-color: #000000b0;
+}
+.footer {
+    background-image: url('hitam.JPG');
+}

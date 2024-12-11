@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="'UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D121241050 Aulia Dwinatasha Lubis_Seven Segment Display</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="parallax header">
+        <div class="cta">
+            <h1 class="title">D121241050 Aulia Dwinatasha Lubis</h1>
+            <h2 class="title">Tugas Akhir Sistem Digital</h3>
+        </div>
+    </div>
+
+    <div class="parallax content">
+        <div class="transparent-shape">
+            <h3 class="new-title">Seven Segment Display</h4>
+            <span class="seven-segment">
+                <div class="segment a"></div>
+                <div class="segment b"></div>
+                <div class="segment c"></div>
+                <div class="segment d"></div>
+                <div class="segment e"></div>
+                <div class="segment f"></div>
+                <div class="segment g"></div>
+            </span>
+
+            <div class="container">
+                <div class="text">
+                    <p>"Enter a number from one of the following" :</p>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button onclick="UbahWarna(0)">0</button>
+                <button onclick="UbahWarna1()">1</button>
+                <button onclick="UbahWarna2()">2</button>
+                <button onclick="UbahWarna3()">3</button>
+                <button onclick="UbahWarna4()">4</button>
+                <button onclick="UbahWarna5()">5</button>
+                <button onclick="UbahWarna6()">6</button>
+                <button onclick="UbahWarna7()">7</button>
+                <button onclick="UbahWarna8()">8</button>
+                <button onclick="UbahWarna9()">9</button>
+                <button onclick="UbahWarnaReset()">Reset</button>
+            </div>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th colspan="4" class="cell=a">BINARY</th>
+                        <th colspan="7" class="cell-a">SEVEN SEGMENT</th>
+                        <th rowspan="2" class="cell-a">DISPLAY</th>
+                    </tr>
+
+                    <tr>
+                        <th class="cell-a">W</th>
+                        <th class="cell-a">X</th>
+                        <th class="cell-a">Y</th>
+                        <th class="cell-a">Z</th>
+                        <th class="cell-a">a</th>
+                        <th class="cell-a">b</th>
+                        <th class="cell-a">c</th>
+                        <th class="cell-a">d</th>
+                        <th class="cell-a">e</th>
+                        <th class="cell-a">f</th>
+                        <th class="cell-a">g</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr class="output-even">
+                        <!-- BINARY -->
+                         <td class="cell-b"> </td>
+                         <td class="cell-b"> </td>
+                         <td class="cell-b"> </td>
+                         <td class="cell-b"> </td>
+
+                         <!-- SEVEN SEGMENT -->
+                         <td class="cell-b"> </td>
+                         <td class="cell-b"> </td>
+                         <td class="cell-b"> </td>
+                         <td class="cell-b"> </td>
+                         <td class="cell-b"> </td>
+                         <td class="cell-b"> </td>
+                         <td class="cell-b"> </td>
+
+                         <!-- DISPLAY -->
+                         <td class="cell-b"> </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <script src="script.js"></script>
+    </div>
+
+    <div class="parallax footer">
+        <div class="cta">
+            <h3 class="title">THANK YOU</h6>
+        </div>
+    </div>
+</body>
+
+</html>
